@@ -33,12 +33,12 @@ services:
       - elastic
 
   code:
-    image: python:3
+    image: python:3.9
     container_name: pythonwz
     networks: 
       - elastic
     volumes: 
-      - /c/Users/Thomas/repos/warzone-api:/code
+      - /opt/warzon2elasticsearch:/code
     environment:
       LOGIN: "TONEMAIL@EMAIL.com"
       PASS: "TONPASSWORD"   
