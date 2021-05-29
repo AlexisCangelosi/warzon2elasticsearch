@@ -17,7 +17,7 @@ async def get_player_stats():
     login = os.environ.get('LOGIN')
     password = os.environ.get('PASS')
     client = await Login(login, password)
-    playername="BrokyBrawks"
+    playername="Sloan"
     results = await client.SearchPlayers(
         Platform.Activision, playername, limit=30)
     print(results)
